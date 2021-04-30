@@ -112,7 +112,7 @@
 *~RAlt::Send {Blind}{vk07}
 
 ; 左 Ctrl 空打ちで IME を ON
-LAlt up::
+LCtrl up::
     if (A_PriorHotkey == "*~LCtrl")
     {
         IME_SET(1)
