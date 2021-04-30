@@ -111,18 +111,18 @@
 *~LAlt::Send {Blind}{vk07}
 *~RAlt::Send {Blind}{vk07}
 
-; 左 Alt 空打ちで IME を OFF
+; 左 Ctrl 空打ちで IME を ON
 LAlt up::
-    if (A_PriorHotkey == "*~LAlt")
+    if (A_PriorHotkey == "*~LCtrl")
     {
-        IME_SET(0)
+        IME_SET(1)
     }
     Return
 
-; 右 Alt 空打ちで IME を ON
+; 右 Alt 空打ちで IME を OFF
 RAlt up::
     if (A_PriorHotkey == "*~RAlt")
     {
-        IME_SET(1)
+        IME_SET(0)
     }
     Return
