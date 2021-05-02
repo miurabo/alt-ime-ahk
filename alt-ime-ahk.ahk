@@ -114,7 +114,7 @@
 LCtrl up::
     if (A_PriorHotkey == "*~LCtrl")
     {
-        IME_SET(1)
+        IME_SET(0)
     }
     Return
 
@@ -122,7 +122,7 @@ LCtrl up::
 RCtrl up::
     if (A_PriorHotkey == "*~RCtrl")
     {
-        IME_SET(1)
+        IME_SET(0)
     }
     Return
 
@@ -134,7 +134,7 @@ RCtrl up::
 LAlt up::
     if (A_PriorHotkey == "*~LAlt")
     {
-        IME_SET(0)
+        IME_SET(1)
     }
     Return
 
@@ -142,6 +142,6 @@ LAlt up::
 RAlt up::
     if (A_PriorHotkey == "*~RAlt")
     {
-        IME_SET(0)
+        IME_SET(1)
     }
     Return
