@@ -1,7 +1,7 @@
 ; Atreus Keyboard 用に Ctr/Alt キーの空打ちで IME の OFF/ON を切り替える
 ;
-; Ctrl キーの空打ちで IME を「かな」に切り替え
-; Alt キーの空打ちで IME を「英数」に切り替え
+; Ctrl キーの空打ちで IME を「英数」に切り替え
+; Alt キーの空打ちで IME を「かな」に切り替え
 ; Ctrl キーを押している間に他のキーを打つと通常の Ctrl キーとして動作
 ;
 ; AutoHotkey: v1.1.26.01
@@ -110,7 +110,7 @@
 *~RCtrl::
     Return
 
-; 左 Ctrl 空打ちで IME を ON
+; 左 Ctrl 空打ちで IME を OFF
 LCtrl up::
     if (A_PriorHotkey == "*~LCtrl")
     {
@@ -118,7 +118,7 @@ LCtrl up::
     }
     Return
 
-; 右 Ctrl 空打ちで IME を ON
+; 右 Ctrl 空打ちで IME を OFF
 RCtrl up::
     if (A_PriorHotkey == "*~RCtrl")
     {
@@ -130,7 +130,7 @@ RCtrl up::
 *~LAlt::Send {Blind}{vk07}
 *~RAlt::Send {Blind}{vk07}
 
-; 左 Alt 空打ちで IME を OFF
+; 左 Alt 空打ちで IME を ON
 LAlt up::
     if (A_PriorHotkey == "*~LAlt")
     {
@@ -138,7 +138,7 @@ LAlt up::
     }
     Return
 
-; 右 Alt 空打ちで IME を OFF
+; 右 Alt 空打ちで IME を ON
 RAlt up::
     if (A_PriorHotkey == "*~RAlt")
     {
